@@ -1,0 +1,5 @@
+- name: access a role
+  hosts: local
+  connection: local
+  roles:
+    - demo
