@@ -1,3 +1,7 @@
 - name: print message
   ansible.builtin.debug:
     msg: hello world
+
+- name: access variable
+  ansible.builtin.debug:
+    msg: URL == {{URL}}
