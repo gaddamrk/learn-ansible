@@ -6,8 +6,8 @@
   tasks:
     - name: string conditions
       debug:
-        msg: fruit is apple
-      when: fruit == "apple"
+        msg: fruit name is apple
+      when: fruit_name == "apple"
     - name: numerical conditions
       debug:
         msg: a is greater than 10
