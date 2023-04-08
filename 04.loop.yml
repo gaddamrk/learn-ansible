@@ -9,9 +9,9 @@
         - apple
         - banan
 
-- name: print fruit name & quantity
-  debug:
-    msg: fruit name {{ item.name }}, & quantity is {{ item.quantity }}
-    loop:
-      - { name: "apple", quantity: 100 }
-      - { name: "banan", quantity: 200 }
+    - name: print fruit name & quantity
+      debug:
+        msg: fruit name {{ item.name }}, & quantity is {{ item.quantity }}
+        loop:
+          - { name: "apple", quantity: 100 }
+          - { name: "banan", quantity: 200 }
