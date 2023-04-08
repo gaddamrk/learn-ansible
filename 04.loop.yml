@@ -1,0 +1,9 @@
+- name: demo on loop
+  hosts: all
+  tasks:
+    - name: print fruit name
+      debug:
+        msg: fruit name is {{item}}
+      loop:
+        - apple
+        - banan
