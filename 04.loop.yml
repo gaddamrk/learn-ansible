@@ -9,7 +9,7 @@
         - apple
         - banan
     - name: print fruit name & quantity
-      degug:
+      debug:
         msg: fruit name {{ item.name }}, & quantity is {{ item.quantity }}
         loop:
           - { name: "apple", quantity: 100 }
