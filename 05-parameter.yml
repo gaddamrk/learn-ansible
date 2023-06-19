@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - debug:
-        msg: "{{ lookup('aws_ssm', 'test', region='us-east-1' ) }}"
+        msg: "{{ lookup('aws_ssm', 'job.xml', region='us-east-1' ) }}"
 
 
 - name: Create or update key/value pair in AWS SSM parameter store
